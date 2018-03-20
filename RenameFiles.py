@@ -1,24 +1,35 @@
-# -*- coding: utf-8 -*-
+
 """
+A program that renames files by stripping their names of any numbers.
+
 Created on Mon Mar 19 14:20:34 2018
 
 @author: Despoina
 """
 
+# import miscellaneous operating system interfaces 
 import os
+
+# define the function to rename files
 def rename_files():
-    # (1) Get file names from a folder. r in front of the path means to take path as it is
-    file_list = os.listdir(r"C:\Users\Despoina\Desktop\prank")
+    # (1) Get file names from a folder
+    file_list = os.listdir("C:/Users/Despoina/Desktop/folder_name")
     print(file_list)
+    # save the current working directory
     saved_path = os.getcwd()
-    os.chdir(r"C:\Users\Despoina\Desktop\prank")
+    # change the current working directory to the one containing the folder with the files
+    os.chdir("C:/Users/Despoina/Desktop/folder_name")
     
     # (2) For each file, rename 
     for file_name in file_list:
+        # optionally print out old and new names for comparison
         print("Old name - "+file_name)
         print("New name - "+file_name.strip('0123456789'))
+        # use rename function to replace the old name with the new one, stripped of numerals
         os.rename(file_name, file_name.strip('0123456789'))
-    
+    # change current working directory back
     os.chdir(saved_path)
+    
+#call the rename_files() function
 rename_files()
     
