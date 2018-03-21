@@ -12,13 +12,13 @@ import os
 
 # define the function to rename files
 def rename_files():
-    # (1) Get file names from a folder
-    file_list = os.listdir("C:/Users/Despoina/Desktop/folder_name")
+    # (1) Get file names from a folder. Use the path to your folder
+    file_list = os.listdir("/folder_name")
     print(file_list)
     # save the current working directory
     saved_path = os.getcwd()
-    # change the current working directory to the one containing the folder with the files
-    os.chdir("C:/Users/Despoina/Desktop/folder_name")
+    # change the current working directory to the one containing the folder with the files.Use the path to your folder
+    os.chdir("/folder_name")
     
     # (2) For each file, rename 
     for file_name in file_list:
