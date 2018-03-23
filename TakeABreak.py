@@ -5,7 +5,6 @@ three consecutive breaks.
 
 Created on Mon Mar 19 13:15:35 2018
 
-@author: Despoina
 """
 
 # import time module to use: 1)current time function-shows program start 2)sleep function-adds 2-hour intervals between breaks
