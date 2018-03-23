@@ -4,7 +4,6 @@ A program that sends a text message using twilio
 
 Created on Mon Mar 19 16:38:13 2018
 
-@author: Despoina
 """
 
 from twilio.rest import Client
