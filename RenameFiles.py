@@ -4,7 +4,6 @@ A program that renames files by stripping their names of any numbers.
 
 Created on Mon Mar 19 14:20:34 2018
 
-@author: Despoina
 """
 
 # import miscellaneous operating system interfaces 
