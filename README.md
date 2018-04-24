@@ -14,7 +14,7 @@ three consecutive breaks.
 2) "Rename files" is a program that renames files by stripping their names of any numbers.
 3) "Drawing a Circle from Squares" is a program that uses the turtle module to draw shapes.
 It draws a circle out of drawing consecutive squares.
-4) "Send a text" is a program that sends a text message using twilio.
+4) "Send a text" is a program that sends a text message using twilio platform.
 
 ### Required Libraries and Dependencies
 Python 3.x is required to run these projects. You can either run these programs using Anaconda IDE or natively with Python 3.x. The turtle module is used to run "Drawing a Circle from Squares" program. You need to create an account with Twilio in order to run the "Send a text" program.
